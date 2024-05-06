@@ -94,11 +94,11 @@ Tokens:
 Clone repo: 
 
 ```bash
-git clone https://github.com/Cyfrin/2024-05-beanstalk-4
+git clone https://github.com/Cyfrin/2024-05-beanstalk-3
 ```
 Install dependencies: 
 ```bash
-cd 2024-05-beanstalk-4/protocol
+cd 2024-05-beanstalk-3/protocol
 yarn
 ```
 Add RPC:
