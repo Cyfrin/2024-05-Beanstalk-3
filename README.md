@@ -135,3 +135,4 @@ All findings in the following resources are considered known issues:
 - All reports and known issues in past Beanstalk Codehawks audits:
   - [Beanstalk Codehawks Part 1](https://www.codehawks.com/report/clsxlpte900074r5et7x6kh96); and
   - [Beanstalk Codehawks Part 2](https://www.codehawks.com/contests/clu7665bs0001fmt5yahc8tyh).
+- Additional Known issues as identified by LightChaser's Static Analysis found [here](https://github.com/Cyfrin/2024-05-Beanstalk-3/issues/1).
