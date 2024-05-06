@@ -1,6 +1,8 @@
-# Beanstalk Codehawks Part 3
+# Beanstalk Part 3 Codehawks
 
-Link to Bean logo: https://github.com/BeanstalkFarms/Beanstalk-Brand-Assets/tree/main/BEAN
+<p align="center">
+<img src="https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/fsv4gpiuvkthl27oygeh?_a=BATAUVAA0" width="500" alt="Beanstalk">
+</p>
 
 # Contest Details
 
@@ -30,24 +32,24 @@ In particular, this audit is centered around the changes included in the Misc. I
 
 You can read an overview of how Beanstalk works [here](https://docs.bean.money/almanac/introduction/how-beanstalk-works).
 
-* [Docs](https://docs.bean.money/)
-* [Whitepaper](https://bean.money/beanstalk.pdf)
-* [Website](https://bean.money/)
-* [Beanstalk Farms Twitter](https://twitter.com/BeanstalkFarms)
-* [Beanstalk Public GitHub Repo](https://github.com/BeanstalkFarms/Beanstalk)
+- [Docs](https://docs.bean.money/)
+- [Whitepaper](https://bean.money/beanstalk.pdf)
+- [Website](https://bean.money/)
+- [Beanstalk Farms Twitter](https://twitter.com/BeanstalkFarms)
+- [Beanstalk Public GitHub Repo](https://github.com/BeanstalkFarms/Beanstalk)
 
 ## Actors
 
-* Stalkholder / Silo Member
-    * Anyone who Deposits assets on the Deposit Whitelist into the Silo, earning the illiquid Stalk token in doing so. Stalkholders participate in governance and earn Bean seigniorage.
-* `gm` caller
-    * Anyone who calls the `gm` function to start the next Season.
-* Unripe holder
-    * Anyone who holds Unripe Beans or Unripe LP. These assets were distributed to holders of BDV (Bean Denominated Value) at the time of the April 2022 governance exploit. Most Unripe holders have their Unripe assets Deposited in the Silo, and thus are also Stalkholders.
-* Fertilizer holder
-    * Anyone who holds Fertilizer, the debt asset earned by participating in Beanstalk's recapitalization.
-* Pod holder
-    * Anyone who holds Pods, the Beanstalk-native debt asset. Pods are minting when lending Beans to Beanstalk (Sowing Beans).
+- Stalkholder / Silo Member
+  - Anyone who Deposits assets on the Deposit Whitelist into the Silo, earning the illiquid Stalk token in doing so. Stalkholders participate in governance and earn Bean seigniorage.
+- `gm` caller
+  - Anyone who calls the `gm` function to start the next Season.
+- Unripe holder
+  - Anyone who holds Unripe Beans or Unripe LP. These assets were distributed to holders of BDV (Bean Denominated Value) at the time of the April 2022 governance exploit. Most Unripe holders have their Unripe assets Deposited in the Silo, and thus are also Stalkholders.
+- Fertilizer holder
+  - Anyone who holds Fertilizer, the debt asset earned by participating in Beanstalk's recapitalization.
+- Pod holder
+  - Anyone who holds Pods, the Beanstalk-native debt asset. Pods are minting when lending Beans to Beanstalk (Sowing Beans).
 
 ## Scope
 
@@ -61,20 +63,20 @@ protocol/
     │   │   └── UnripeFacet.sol
     │   ├── silo/
     │   │   └── ConvertFacet.sol
-    │   └── sun/ 
+    │   └── sun/
     │       └── SeasonFacet/
     │           └── Sun.sol
     └── libraries/
-        ├── Convert/ 
+        ├── Convert/
         │   ├── LibChopConvert.sol
         │   ├── LibConvert.sol
         │   ├── LibConvertData.sol
-        │   └── LibLambdaConvert.sol 
+        │   └── LibLambdaConvert.sol
         ├── LibChop.sol
         ├── LibFertilizer.sol
         ├── LibStrings.sol
         ├── LibUnripe.sol
-        └── Minting/ 
+        └── Minting/
             └── LibWellMinting.sol
 ```
 
@@ -83,34 +85,43 @@ protocol/
 Beanstalk implements the [ERC-2535 Diamond standard](https://docs.bean.money/developers/overview/eip-2535-diamond). It supports various whitelists for [Deposits](https://docs.bean.money/almanac/farm/silo#deposit-whitelist), [Minting](https://docs.bean.money/almanac/farm/sun#minting-whitelist), [Converts](https://docs.bean.money/almanac/peg-maintenance/convert#convert-whitelist), etc., particularly for LP tokens from [Basin](https://basin.exchange/).
 
 Blockchains:
-* Ethereum
+
+- Ethereum
 
 Tokens:
-* ERC-20 (all are accepted in Farm balances, a whitelist is accepted on the Deposit Whitelist, etc.)
-* ERC-1155 (Fertilizer and Deposits are ERC-1155 tokens)
+
+- ERC-20 (all are accepted in Farm balances, a whitelist is accepted on the Deposit Whitelist, etc.)
+- ERC-1155 (Fertilizer and Deposits are ERC-1155 tokens)
 
 ## Setup
 
-Clone repo: 
+Clone repo:
 
 ```bash
-git clone https://github.com/Cyfrin/2024-05-beanstalk-3
+git clone https://github.com/Cyfrin/2024-05-Beanstalk-3
 ```
-Install dependencies: 
+
+Install dependencies:
+
 ```bash
-cd 2024-05-beanstalk-3/protocol
+cd 2024-05-Beanstalk-3/protocol
 yarn
 ```
+
 Add RPC:
+
 ```bash
 export FORKING_RPC=https://eth-mainnet.g.alchemy.com/v2/{RPC_KEY}
 ```
 
-generate: 
+generate:
+
 ```bash
 yarn generate
 ```
-Test: 
+
+Test:
+
 ```bash
 yarn test
 ```
@@ -119,8 +130,8 @@ yarn test
 
 All findings in the following resources are considered known issues:
 
-* All Beanstalk audit reports listed in this [repository](https://github.com/BeanstalkFarms/Beanstalk-Audits);
-* All bug reports from the Immunefi program listed [here](https://community.bean.money/bug-reports);
-* All reports and known issues in past Beanstalk Codehawks audits:
-    * [Beanstalk Codehawks Part 1](https://www.codehawks.com/report/clsxlpte900074r5et7x6kh96); and
-    * [Beanstalk Codehawks Part 2](https://www.codehawks.com/contests/clu7665bs0001fmt5yahc8tyh).
+- All Beanstalk audit reports listed in this [repository](https://github.com/BeanstalkFarms/Beanstalk-Audits);
+- All bug reports from the Immunefi program listed [here](https://community.bean.money/bug-reports);
+- All reports and known issues in past Beanstalk Codehawks audits:
+  - [Beanstalk Codehawks Part 1](https://www.codehawks.com/report/clsxlpte900074r5et7x6kh96); and
+  - [Beanstalk Codehawks Part 2](https://www.codehawks.com/contests/clu7665bs0001fmt5yahc8tyh).
