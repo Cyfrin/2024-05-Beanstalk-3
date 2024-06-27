@@ -1,17 +1,14 @@
-# Beanstalk Part 3 Codehawks
+# Beanstalk Part 3
 
-<p align="center">
-<img src="https://res.cloudinary.com/droqoz7lg/image/upload/q_90/dpr_2.0/c_fill,g_auto,h_320,w_320/f_auto/v1/company/fsv4gpiuvkthl27oygeh?_a=BATAUVAA0" width="500" alt="Beanstalk">
-</p>
+[//]: # (contest-details-open)
 
-# Contest Details
-
-### Prize Pool
+## Contest Details
 
 - Total Pool - $21,000
 - H/M - $17,900
 - Low - 1,000
 - Community Judging - $2,100
+  
 - Starts: Monday, May 6, 2024 Noon UTC
 - Ends: Monday, May 20, 2024 Noon UTC
 
@@ -50,6 +47,10 @@ You can read an overview of how Beanstalk works [here](https://docs.bean.money/a
   - Anyone who holds Fertilizer, the debt asset earned by participating in Beanstalk's recapitalization.
 - Pod holder
   - Anyone who holds Pods, the Beanstalk-native debt asset. Pods are minting when lending Beans to Beanstalk (Sowing Beans).
+
+[//]: # (contest-details-close)
+
+[//]: # (scope-open)
 
 ## Scope
 
@@ -93,7 +94,11 @@ Tokens:
 - ERC-20 (all are accepted in Farm balances, a whitelist is accepted on the Deposit Whitelist, etc.)
 - ERC-1155 (Fertilizer and Deposits are ERC-1155 tokens)
 
-## Setup
+[//]: # (scope-close)
+
+[//]: # (getting-started-open)
+
+## Getting Started
 
 Clone repo:
 
@@ -126,6 +131,10 @@ Test:
 yarn test
 ```
 
+[//]: # (getting-started-close)
+
+[//]: # (known-issues-open)
+
 ## Known Issues
 
 All findings in the following resources are considered known issues:
@@ -136,3 +145,5 @@ All findings in the following resources are considered known issues:
   - [Beanstalk Codehawks Part 1](https://www.codehawks.com/report/clsxlpte900074r5et7x6kh96); and
   - [Beanstalk Codehawks Part 2](https://www.codehawks.com/contests/clu7665bs0001fmt5yahc8tyh).
 - Additional Known issues as identified by LightChaser's Static Analysis found [here](https://github.com/Cyfrin/2024-05-Beanstalk-3/issues/1).
+
+[//]: # (known-issues-close)
